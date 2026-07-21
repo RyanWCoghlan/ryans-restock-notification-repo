@@ -8,6 +8,7 @@ on:
 jobs:
   audit:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
