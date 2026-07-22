@@ -33,7 +33,7 @@ from config import STORES, GAME_KEYWORDS, PRODUCT_LINES, WEBHOOK_ENV_VARS
 STATE_FILE = "state/seen_products.json"
 
 CONCURRENCY = 10
-TIMEOUT = 20.0
+TIMEOUT = 15.0
 MAX_PAGES_PER_STORE = 5
 PAGE_SIZE = 250
 MAX_RETRIES = 2
@@ -55,7 +55,7 @@ REQUEST_HEADERS = {
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
     ),
-    "Accept": "application/json,text/html;q=0.9,*/*;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
     "Accept-Language": "en-AU,en;q=0.9",
 }
 
@@ -109,7 +109,8 @@ async def get_with_retries(client: httpx.AsyncClient, url: str) -> httpx.Respons
                 await asyncio.sleep(wait)
                 continue
             return resp
-        except Exception:
+        except Exception as e:
+            print(f"  request error on {url}: {type(e).__name__}: {e}")
             if attempt < MAX_RETRIES - 1:
                 await asyncio.sleep(BASE_BACKOFF * (2 ** attempt))
             else:
@@ -122,11 +123,16 @@ async def fetch_all_products(client: httpx.AsyncClient, store_url: str) -> list[
     for page in range(1, MAX_PAGES_PER_STORE + 1):
         url = f"{store_url.rstrip('/')}/products.json?limit={PAGE_SIZE}&page={page}"
         resp = await get_with_retries(client, url)
-        if resp is None or resp.status_code != 200:
+        if resp is None:
+            print(f"  [{store_url}] page {page}: no response after retries")
+            break
+        if resp.status_code != 200:
+            print(f"  [{store_url}] page {page}: http_{resp.status_code}")
             break
         try:
             data = resp.json()
-        except Exception:
+        except Exception as e:
+            print(f"  [{store_url}] page {page}: JSON parse failed: {e}")
             break
         batch = data.get("products", [])
         if not batch:
@@ -306,9 +312,18 @@ async def main() -> None:
 
         if not state.get("initialized"):
             total_seen = sum(len(v) for v in state["seen"].values())
-            print(f"\nFirst run: baseline recorded for {total_seen} existing products across {len(STORES)} stores.")
-            print("No Discord notifications sent on this run (that's expected).")
-            state["initialized"] = True
+            if total_seen == 0:
+                print(
+                    "\nWARNING: baseline pass recorded 0 products across all stores. "
+                    "This almost always means every store failed to fetch (network/blocking "
+                    "issue), not that there's genuinely nothing in stock. NOT marking baseline "
+                    "as complete, so the next run will retry the baseline pass instead of "
+                    "treating everything as a brand new restock."
+                )
+            else:
+                print(f"\nFirst run: baseline recorded for {total_seen} existing products across {len(STORES)} stores.")
+                print("No Discord notifications sent on this run (that's expected).")
+                state["initialized"] = True
         else:
             print(f"\nFound {len(all_findings)} new product(s) since last check.")
             by_game: dict[str, list[dict]] = {}
