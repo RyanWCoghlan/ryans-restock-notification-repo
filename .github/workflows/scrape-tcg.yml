@@ -1,0 +1,50 @@
+name: TCG Restock Scraper
+
+on:
+  schedule:
+    # Every 20 minutes. GitHub does not guarantee exact timing on schedule
+    # triggers - under load this can slip by a few minutes, which is fine
+    # for a restock tracker.
+    - cron: "*/20 * * * *"
+  workflow_dispatch: {}   # lets you trigger a manual run/test from the Actions tab
+
+permissions:
+  contents: write   # needed so the workflow can commit the updated state file back
+
+# Prevents overlapping runs from racing on the same state file if one run
+# takes longer than 10 minutes.
+concurrency:
+  group: tcg-scraper
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install httpx
+
+      - name: Run scraper
+        env:
+          DISCORD_WEBHOOK_POKEMON: ${{ secrets.DISCORD_WEBHOOK_POKEMON }}
+          DISCORD_WEBHOOK_ONEPIECE: ${{ secrets.DISCORD_WEBHOOK_ONEPIECE }}
+          DISCORD_WEBHOOK_MTG: ${{ secrets.DISCORD_WEBHOOK_MTG }}
+          DISCORD_WEBHOOK_RIFTBOUND: ${{ secrets.DISCORD_WEBHOOK_RIFTBOUND }}
+        run: python scrape.py
+
+      - name: Commit updated state
+        run: |
+          git config user.name "tcg-scraper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/seen_products.json
+          git diff --quiet --cached || git commit -m "Update seen products state"
+          git push
