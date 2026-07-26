@@ -118,11 +118,14 @@ async def get_with_retries(client: httpx.AsyncClient, url: str) -> httpx.Respons
             )
             elapsed = time.monotonic() - start
             print(f"  {url} -> http_{resp.status_code} in {elapsed:.1f}s")
-            if resp.status_code in (429, 503) and attempt < MAX_RETRIES - 1:
-                retry_after = resp.headers.get("Retry-After")
-                wait = float(retry_after) if retry_after and retry_after.isdigit() else BASE_BACKOFF * (2 ** attempt)
-                await asyncio.sleep(wait)
-                continue
+            # Deliberately NOT retrying on 429/503 here. These came back in
+            # well under a second - the server isn't slow, it's actively
+            # telling us to back off. Retrying within the same run just
+            # burns the per-store time budget (a large Retry-After value
+            # was silently eating 30s on a single sleep). Since this whole
+            # script re-runs every 20 minutes anyway, it's simpler and
+            # faster to accept the block for this run and let the next
+            # scheduled run take a fresh shot.
             return resp
         except Exception as e:
             elapsed = time.monotonic() - start
