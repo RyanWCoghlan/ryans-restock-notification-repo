@@ -25,6 +25,7 @@ import asyncio
 import json
 import os
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 import httpx
 
@@ -32,7 +33,7 @@ from config import STORES, GAME_KEYWORDS, PRODUCT_LINES, WEBHOOK_ENV_VARS
 
 STATE_FILE = "state/seen_products.json"
 
-CONCURRENCY = 5
+CONCURRENCY = 3
 # A flat timeout isn't the right tool here: the earlier run showed most
 # failures are connections that just hang (consistent with Cloudflare-style
 # bot challenges holding the connection open) rather than fast rejections.
@@ -109,18 +110,14 @@ HARD_REQUEST_DEADLINE = 10.0  # independent backstop - see comment below
 
 async def get_with_retries(client: httpx.AsyncClient, url: str) -> httpx.Response | None:
     for attempt in range(MAX_RETRIES):
+        start = time.monotonic()
         try:
-            # We wrap this in our own asyncio.wait_for on top of httpx's own
-            # connect/read timeouts. Some anti-bot challenge pages "trickle"
-            # a byte of data every few seconds specifically to keep each
-            # individual read under the read-timeout threshold while the
-            # full response never actually completes - httpx's own timeout
-            # never fires in that case. This hard deadline cuts it off
-            # regardless of what the server does.
             resp = await asyncio.wait_for(
                 client.get(url, timeout=REQUEST_TIMEOUT, follow_redirects=True, headers=REQUEST_HEADERS),
                 timeout=HARD_REQUEST_DEADLINE,
             )
+            elapsed = time.monotonic() - start
+            print(f"  {url} -> http_{resp.status_code} in {elapsed:.1f}s")
             if resp.status_code in (429, 503) and attempt < MAX_RETRIES - 1:
                 retry_after = resp.headers.get("Retry-After")
                 wait = float(retry_after) if retry_after and retry_after.isdigit() else BASE_BACKOFF * (2 ** attempt)
@@ -128,7 +125,8 @@ async def get_with_retries(client: httpx.AsyncClient, url: str) -> httpx.Respons
                 continue
             return resp
         except Exception as e:
-            print(f"  request error on {url}: {type(e).__name__}: {e}")
+            elapsed = time.monotonic() - start
+            print(f"  request error on {url}: {type(e).__name__}: {e} (after {elapsed:.1f}s)")
             if attempt < MAX_RETRIES - 1:
                 await asyncio.sleep(BASE_BACKOFF * (2 ** attempt))
             else:
@@ -170,12 +168,14 @@ async def process_store(client: httpx.AsyncClient, store: dict, state: dict, sem
     domain = store["domain"]
     async with sem:
         await asyncio.sleep(0.2)  # jitter so requests don't fire in lockstep
+        store_start = time.monotonic()
+        print(f"[{domain}] starting fetch")
         try:
             products = await asyncio.wait_for(
                 fetch_all_products(client, store["url"]), timeout=PER_STORE_TIMEOUT
             )
         except asyncio.TimeoutError:
-            print(f"[{domain}] TIMEOUT - exceeded {PER_STORE_TIMEOUT}s budget, skipping this run")
+            print(f"[{domain}] TIMEOUT - exceeded {PER_STORE_TIMEOUT}s budget after {time.monotonic()-store_start:.1f}s, skipping this run")
             return []
         except Exception as e:
             print(f"[{domain}] ERROR fetching products: {e}")
@@ -316,6 +316,16 @@ async def send_discord_notifications(client: httpx.AsyncClient, game: str, findi
 # ---------------------------------------------------------------------------
 
 async def main() -> None:
+    # DNS resolution happens on asyncio's default thread pool executor.
+    # Cancelling an asyncio.wait_for() does NOT kill the underlying OS
+    # thread doing the actual getaddrinfo() call - it just abandons it while
+    # it keeps running. If the pool is small, those abandoned lookups can
+    # pile up and starve every subsequent store's DNS resolution, which
+    # would explain widespread hangs regardless of per-request timeouts.
+    # Widening the pool removes that as a possible cause.
+    loop = asyncio.get_event_loop()
+    loop.set_default_executor(ThreadPoolExecutor(max_workers=64))
+
     state = load_state()
     state.setdefault("seen", {})
 
