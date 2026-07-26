@@ -104,10 +104,23 @@ def detect_product_line(game: str, text: str) -> str | None:
 # Networking
 # ---------------------------------------------------------------------------
 
+HARD_REQUEST_DEADLINE = 10.0  # independent backstop - see comment below
+
+
 async def get_with_retries(client: httpx.AsyncClient, url: str) -> httpx.Response | None:
     for attempt in range(MAX_RETRIES):
         try:
-            resp = await client.get(url, timeout=REQUEST_TIMEOUT, follow_redirects=True, headers=REQUEST_HEADERS)
+            # We wrap this in our own asyncio.wait_for on top of httpx's own
+            # connect/read timeouts. Some anti-bot challenge pages "trickle"
+            # a byte of data every few seconds specifically to keep each
+            # individual read under the read-timeout threshold while the
+            # full response never actually completes - httpx's own timeout
+            # never fires in that case. This hard deadline cuts it off
+            # regardless of what the server does.
+            resp = await asyncio.wait_for(
+                client.get(url, timeout=REQUEST_TIMEOUT, follow_redirects=True, headers=REQUEST_HEADERS),
+                timeout=HARD_REQUEST_DEADLINE,
+            )
             if resp.status_code in (429, 503) and attempt < MAX_RETRIES - 1:
                 retry_after = resp.headers.get("Retry-After")
                 wait = float(retry_after) if retry_after and retry_after.isdigit() else BASE_BACKOFF * (2 ** attempt)
