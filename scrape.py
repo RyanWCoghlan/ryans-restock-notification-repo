@@ -32,14 +32,19 @@ from config import STORES, GAME_KEYWORDS, PRODUCT_LINES, WEBHOOK_ENV_VARS
 
 STATE_FILE = "state/seen_products.json"
 
-CONCURRENCY = 10
-TIMEOUT = 15.0
-MAX_PAGES_PER_STORE = 5
+CONCURRENCY = 5
+# A flat timeout isn't the right tool here: the earlier run showed most
+# failures are connections that just hang (consistent with Cloudflare-style
+# bot challenges holding the connection open) rather than fast rejections.
+# A short, explicit connect timeout lets us bail out quickly instead of
+# burning the whole per-store budget on one stuck request.
+REQUEST_TIMEOUT = httpx.Timeout(connect=8.0, read=10.0, write=10.0, pool=10.0)
+MAX_PAGES_PER_STORE = 3
 PAGE_SIZE = 250
 MAX_RETRIES = 2
-BASE_BACKOFF = 2.0
+BASE_BACKOFF = 1.0
 PAGE_DELAY = 0.3  # politeness delay between pages of the same store
-PER_STORE_TIMEOUT = 45.0  # hard cap so one slow/blocked store can't stall the whole run
+PER_STORE_TIMEOUT = 30.0  # hard cap so one slow/blocked store can't stall the whole run
 
 PREORDER_KEYWORDS = ["pre-order", "preorder", "pre order"]
 
@@ -102,7 +107,7 @@ def detect_product_line(game: str, text: str) -> str | None:
 async def get_with_retries(client: httpx.AsyncClient, url: str) -> httpx.Response | None:
     for attempt in range(MAX_RETRIES):
         try:
-            resp = await client.get(url, timeout=TIMEOUT, follow_redirects=True, headers=REQUEST_HEADERS)
+            resp = await client.get(url, timeout=REQUEST_TIMEOUT, follow_redirects=True, headers=REQUEST_HEADERS)
             if resp.status_code in (429, 503) and attempt < MAX_RETRIES - 1:
                 retry_after = resp.headers.get("Retry-After")
                 wait = float(retry_after) if retry_after and retry_after.isdigit() else BASE_BACKOFF * (2 ** attempt)
@@ -304,7 +309,7 @@ async def main() -> None:
     sem = asyncio.Semaphore(CONCURRENCY)
     all_findings: list[dict] = []
 
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(limits=httpx.Limits(max_connections=20, max_keepalive_connections=10)) as client:
         tasks = [process_store(client, store, state, sem) for store in STORES]
         results = await asyncio.gather(*tasks)
         for r in results:
