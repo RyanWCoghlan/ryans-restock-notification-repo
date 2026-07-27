@@ -1,4 +1,376 @@
 {
-  "initialized": false,
-  "seen": {}
+  "initialized": true,
+  "seen": {
+    "brutaldeluxe.com.au": {},
+    "blacklistcards.com": {
+      "10451947323707": {
+        "title": "2025 POKEMON MEP EN-ME BLACK STAR PROMO #023 MEGA CHARIZARD X ex ULTRA-PREMIUM COLLECTION PSA 10",
+        "line": "premium collection",
+        "game": "pokemon",
+        "first_seen": 1785195625.9674408,
+        "available": true,
+        "last_checked": 1785195625.9674408
+      },
+      "10410925195579": {
+        "title": "Riftbound - Vendetta Booster Box",
+        "line": "booster box",
+        "game": "riftbound",
+        "first_seen": 1785195625.9674408,
+        "available": true,
+        "last_checked": 1785195625.9674408
+      },
+      "10362381664571": {
+        "title": "2025 POKEMON MEP EN-ME BLACK STAR PROMO #023 MEGA CHARIZARD X ex ULTRA-PREMIUM COLLECTION PSA 9",
+        "line": "premium collection",
+        "game": "pokemon",
+        "first_seen": 1785195625.9674408,
+        "available": true,
+        "last_checked": 1785195625.9674408
+      },
+      "10313123397947": {
+        "title": "Riftbound: League of Legends TCG – Unleashed Booster Box",
+        "line": "booster box",
+        "game": "riftbound",
+        "first_seen": 1785195625.9674408,
+        "available": true,
+        "last_checked": 1785195625.9674408
+      }
+    },
+    "cardtradersaustralia.com.au": {},
+    "cardhouse.com.au": {},
+    "cherrycollectables.com.au": {
+      "7784418082870": {
+        "title": "Pokemon TCG SV10 Scarlet & Violet Destined Rivals Booster Box",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195628.9587696,
+        "available": true,
+        "last_checked": 1785195628.9587696
+      },
+      "6646777479222": {
+        "title": "Pokemon TCG Sword & Shield Brilliant Stars Booster Box",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195628.9587696,
+        "available": true,
+        "last_checked": 1785195628.9587696
+      },
+      "7530542104630": {
+        "title": "Pokemon TCG SWSH07 Sword & Shield Evolving Skies Elite Trainer Box [ SYLVEON ]",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785195628.9587696,
+        "available": true,
+        "last_checked": 1785195628.9587696
+      },
+      "6620407365686": {
+        "title": "Pokemon TCG SWSH07 Sword & Shield Evolving Skies Elite Trainer Box [ UMBREON ]",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785195628.9587696,
+        "available": true,
+        "last_checked": 1785195628.9587696
+      },
+      "7885479346230": {
+        "title": "Pokemon TCG ME01 Mega Evolution Enhanced Booster Box",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195628.9587696,
+        "available": true,
+        "last_checked": 1785195628.9587696
+      }
+    },
+    "collectiblemadness.com.au": {
+      "11111976141073": {
+        "title": "Pokemon - TCG - Pitch Black Booster Pack",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195629.5374026,
+        "available": true,
+        "last_checked": 1785195629.5374026
+      },
+      "11035580760337": {
+        "title": "Pokemon - TCG - Pitch Black Elite Trainer Box",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785195629.5374026,
+        "available": true,
+        "last_checked": 1785195629.5374026
+      },
+      "11035577254161": {
+        "title": "Pokemon - TCG - Pitch Black Booster Box",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195629.5374026,
+        "available": true,
+        "last_checked": 1785195629.5374026
+      }
+    },
+    "collectorsquest.com.au": {},
+    "firstgames.com.au": {
+      "8330422714568": {
+        "title": "Pokemon TCG: Mega Evolution 5 - Pitch Black Booster Bundle",
+        "line": "booster bundle",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8330422943944": {
+        "title": "Pokemon TCG: Mega Evolution 5 - Pitch Black Elite Trainer Box",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8330407706824": {
+        "title": "Pokemon TCG: Mega Evolution 5 - Pitch Black Booster Box (Display of 36)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8250159759560": {
+        "title": "Pokemon TCG: Mega Evolution - Base Set Enhanced Booster Box (Display of 36)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8093228138696": {
+        "title": "Pokemon TCG: Scarlet & Violet 8 - Surging Sparks Booster Box (Display of 36)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8269410271432": {
+        "title": "One Piece Card Game: The Azure Sea's Seven (OP-14) Booster Box (Display of 24) ENGLISH",
+        "line": "booster box",
+        "game": "one_piece",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8316472099016": {
+        "title": "Pokemon TCG: Mega Zygarde ex Premium Collection",
+        "line": "premium collection",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8283963064520": {
+        "title": "One Piece Card Game: Extra Booster Display – Heroines Edition [EB-03] Booster Box (Display of 24) ENGLISH",
+        "line": "booster box",
+        "game": "one_piece",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8316459974856": {
+        "title": "Pokemon TCG: Mega Evolution 4 - Chaos Rising Booster Box (Display of 36)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8316470952136": {
+        "title": "Pokemon TCG: Mega Evolution 4 - Chaos Rising Elite Trainer Box",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8316471345352": {
+        "title": "Pokemon TCG: Mega Evolution 4 - Chaos Rising Booster Bundle",
+        "line": "booster bundle",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8315515338952": {
+        "title": "Pokemon – Gem Pack Vol. 5 Booster Box – Simplified Chinese (CBB5C)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8315515175112": {
+        "title": "Pokemon – Gem Pack Vol. 4 Booster Box – Simplified Chinese (CBB4C)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8214584393928": {
+        "title": "One Piece Card Game: A Fist of Divine Speed Booster Box (OP-11) (Display of 24) ENGLISH - Limit 1",
+        "line": "booster box",
+        "game": "one_piece",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8307528401096": {
+        "title": "Pokemon TCG: Mega Evolution 3 - Perfect Order Booster Bundle",
+        "line": "booster bundle",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8307528335560": {
+        "title": "Pokemon TCG: Mega Evolution 3 - Perfect Order Elite Trainer Box",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8307526893768": {
+        "title": "Pokemon TCG: Mega Evolution 3 - Perfect Order Booster Box (Display of 36)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8251238547656": {
+        "title": "One Piece Card Game: Carrying On His Will (OP-13) Booster Box (Display of 24) ENGLISH - Limit 1",
+        "line": "booster box",
+        "game": "one_piece",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8261457969352": {
+        "title": "Pokemon TCG: Mega Charizard X ex Ultra-Premium Collection",
+        "line": "premium collection",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8244286095560": {
+        "title": "Pokemon – Collect 151 Journey Slim Booster Box  – Simplified Chinese (151C)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8256981008584": {
+        "title": "Pokemon TCG: Mega Evolution 2 - Phantasmal Flames Elite Trainer Box",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8254094770376": {
+        "title": "Pokemon TCG: Mega Evolution 2 - Phantasmal Flames Booster Box (Display of 36) - Limit 1",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8233457778888": {
+        "title": "One Piece Card Game: Legacy of the Master Booster Box (OP-12) (Display of 24) ENGLISH",
+        "line": "booster box",
+        "game": "one_piece",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8236363219144": {
+        "title": "Pokemon – Collect 151 Surprise Slim Booster Box  – Simplified Chinese (151C)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8215718428872": {
+        "title": "Pokemon – Gem Pack Vol. 2 Booster Box – Simplified Chinese (CBB2C)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8141114376392": {
+        "title": "Pokemon TCG Scarlet & Violet 8.5 Prismatic Evolutions Elite Trainer Box",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      },
+      "8211803242696": {
+        "title": "Pokemon TCG: Scarlet & Violet 8.5 - Prismatic Evolutions Super-Premium Collection",
+        "line": "premium collection",
+        "game": "pokemon",
+        "first_seen": 1785195631.69765,
+        "available": true,
+        "last_checked": 1785195631.69765
+      }
+    },
+    "crithit.com.au": {
+      "15873609990225": {
+        "title": "Great Crystal Grand Gathering Booster Box [Pokemon CN]",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195632.3916209,
+        "available": true,
+        "last_checked": 1785195632.3916209
+      }
+    },
+    "flukeandbox.com": {
+      "10431777407292": {
+        "title": "Pokémon TCG: Mega Evolution— Pitch Black Elite Trainer Box",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785195632.7768679,
+        "available": true,
+        "last_checked": 1785195632.7768679
+      },
+      "10431777112380": {
+        "title": "Pokémon TCG: Mega Evolution Pitch Black Booster Box (36 Packs)",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785195632.7768679,
+        "available": true,
+        "last_checked": 1785195632.7768679
+      },
+      "10426677526844": {
+        "title": "Pokémon TCG Mega Greninja ex Premium Collection",
+        "line": "premium collection",
+        "game": "pokemon",
+        "first_seen": 1785195632.7768679,
+        "available": true,
+        "last_checked": 1785195632.7768679
+      },
+      "10389282423100": {
+        "title": "Pokemon Mega Zygarde ex Premium Collection",
+        "line": "premium collection",
+        "game": "pokemon",
+        "first_seen": 1785195632.7768679,
+        "available": true,
+        "last_checked": 1785195632.7768679
+      }
+    },
+    "frenlybricks.store": {},
+    "gameology.com.au": {},
+    "gamers-village.com.au": {}
+  }
 }
