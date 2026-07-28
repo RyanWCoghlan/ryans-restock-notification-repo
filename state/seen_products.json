@@ -406,7 +406,7 @@
         "game": "riftbound",
         "first_seen": 1785203814.8058147,
         "available": true,
-        "last_checked": 1785262099.4025342
+        "last_checked": 1785268484.8991659
       },
       "8730808156359": {
         "title": "Pokemon TCG Pitch Black Booster Box (Purchase Limit of 6 Booster Boxes Per Customer)",
@@ -442,7 +442,7 @@
         "game": "pokemon",
         "first_seen": 1785203818.1684773,
         "available": true,
-        "last_checked": 1785262102.8652987
+        "last_checked": 1785268487.2097328
       }
     },
     "irresistibleforce.com.au": {
@@ -452,7 +452,7 @@
         "game": "riftbound",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785262104.3536758
+        "last_checked": 1785268487.1663675
       },
       "10488730714427": {
         "title": "LPG Essentials Acrylic Booster Box Protector - Pokemon Booster Box Size",
@@ -460,7 +460,7 @@
         "game": "pokemon",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785262104.3536758
+        "last_checked": 1785268487.1663675
       },
       "10488729862459": {
         "title": "LPG Acrylic Booster Box Protector - MTG Collector Box Size",
@@ -468,7 +468,7 @@
         "game": "mtg",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785262104.3536758
+        "last_checked": 1785268487.1663675
       },
       "10311882834235": {
         "title": "Pokémon TCG: Mega Evolution Chaos Rising Booster Box",
@@ -476,7 +476,7 @@
         "game": "pokemon",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785262104.3536758
+        "last_checked": 1785268487.1663675
       },
       "10383874949435": {
         "title": "POKÉMON TCG Scarlet & Violet 151 Booster Bundle Set (DISPLAY)",
@@ -484,7 +484,7 @@
         "game": "pokemon",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785262104.3536758
+        "last_checked": 1785268487.1663675
       },
       "10311882572091": {
         "title": "Pokémon TCG Mega Zygarde ex Premium Collection",
@@ -1321,7 +1321,7 @@
         "game": "one_piece",
         "first_seen": 1785262112.6934328,
         "available": true,
-        "last_checked": 1785262112.6934328
+        "last_checked": 1785268495.5120468
       },
       "15108811653484": {
         "title": "Pokemon TCG - Pitch Black Booster Box",
@@ -1329,7 +1329,7 @@
         "game": "pokemon",
         "first_seen": 1785262112.6934328,
         "available": true,
-        "last_checked": 1785262112.6934328
+        "last_checked": 1785268495.5120468
       }
     },
     "packmancollectables.com.au": {},
@@ -1363,7 +1363,7 @@
         "game": "pokemon",
         "first_seen": 1785262119.4291291,
         "available": true,
-        "last_checked": 1785262119.4291291
+        "last_checked": 1785268499.6370149
       }
     },
     "t3games.com.au": {
@@ -2022,7 +2022,7 @@
         "game": "riftbound",
         "first_seen": 1785262130.3375056,
         "available": true,
-        "last_checked": 1785262130.3375056
+        "last_checked": 1785268502.6121478
       },
       "8006025805907": {
         "title": "Pokemon TCG: Simplified Chinese CSV9C Stellar Crystal Slim Booster Box",
@@ -2030,7 +2030,7 @@
         "game": "pokemon",
         "first_seen": 1785262130.3375056,
         "available": true,
-        "last_checked": 1785262130.3375056
+        "last_checked": 1785268502.6121478
       },
       "7946808229971": {
         "title": "Pokemon TCG: Simplified Chinese GEM V5 Pack Vol.5 Booster Box",
@@ -2038,7 +2038,7 @@
         "game": "pokemon",
         "first_seen": 1785262130.3375056,
         "available": true,
-        "last_checked": 1785262130.3375056
+        "last_checked": 1785268502.6121478
       },
       "7998400725075": {
         "title": "League Of Legends : Riftbound Spiritforged Booster Box",
@@ -2046,7 +2046,7 @@
         "game": "riftbound",
         "first_seen": 1785262130.3375056,
         "available": true,
-        "last_checked": 1785262130.3375056
+        "last_checked": 1785268502.6121478
       },
       "7912310571091": {
         "title": "Pokemon TCG: Mega Evolution - Perfect Order Booster Box",
@@ -2054,7 +2054,7 @@
         "game": "pokemon",
         "first_seen": 1785262130.3375056,
         "available": true,
-        "last_checked": 1785262130.3375056
+        "last_checked": 1785268502.6121478
       }
     },
     "trollaustralia.com.au": {
@@ -2221,7 +2221,7 @@
         "game": "riftbound",
         "first_seen": 1785262133.751962,
         "available": true,
-        "last_checked": 1785262133.751962
+        "last_checked": 1785268504.8181872
       },
       "8484043325601": {
         "title": "Riftbound League of Legends TCG – UNLEASHED Booster Box of 24 Packs",
@@ -2229,7 +2229,7 @@
         "game": "riftbound",
         "first_seen": 1785262133.751962,
         "available": true,
-        "last_checked": 1785262133.751962
+        "last_checked": 1785268504.8181872
       },
       "8484045127841": {
         "title": "Riftbound League of Legends TCG – Champion Deck VEX UNLEASHED",
@@ -2237,8 +2237,72 @@
         "game": "riftbound",
         "first_seen": 1785262133.751962,
         "available": true,
-        "last_checked": 1785262133.751962
+        "last_checked": 1785268504.8181872
       }
-    }
+    },
+    "leogames.com.au": {
+      "8426885578941": {
+        "title": "Sword And Shield Darkness Ablaze Elite Trainer Box",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785268491.5982149,
+        "available": true,
+        "last_checked": 1785268491.5982149
+      },
+      "8426885152957": {
+        "title": "Scarlet & Violet Shrouded Fable Elite Trainer Box",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785268491.5982149,
+        "available": true,
+        "last_checked": 1785268491.5982149
+      },
+      "8402632474813": {
+        "title": "Mega Evolution: Pitch Black Elite Trainer Box",
+        "line": "elite trainer box",
+        "game": "pokemon",
+        "first_seen": 1785268491.5982149,
+        "available": true,
+        "last_checked": 1785268491.5982149
+      },
+      "8384509280445": {
+        "title": "Mega Evolution: Pitch Black Booster Box",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785268491.5982149,
+        "available": true,
+        "last_checked": 1785268491.5982149
+      }
+    },
+    "lightofcards.com.au": {},
+    "mayhemcollectables.com.au": {
+      "10091762811120": {
+        "title": "Riftbound Vendetta Booster Box",
+        "line": "booster box",
+        "game": "riftbound",
+        "first_seen": 1785268493.0613449,
+        "available": true,
+        "last_checked": 1785268493.0613449
+      }
+    },
+    "onlinecoinsandcollectables.com.au": {
+      "9412863000832": {
+        "title": "Riftbound League of Legends TCG – UNLEASHED Booster Box of 24 Packs - SEALED",
+        "line": "booster box",
+        "game": "riftbound",
+        "first_seen": 1785268495.1587205,
+        "available": true,
+        "last_checked": 1785268495.1587205
+      },
+      "9494699180288": {
+        "title": "Riftbound: League of Legends TCG – Vault – Vendetta - PRE ORDER",
+        "line": "booster box",
+        "game": "riftbound",
+        "first_seen": 1785268495.1587205,
+        "available": true,
+        "last_checked": 1785268495.1587205
+      }
+    },
+    "thecardhubaustralia.com.au": {}
   }
 }
