@@ -332,7 +332,7 @@
         "game": "pokemon",
         "first_seen": 1785195632.3916209,
         "available": true,
-        "last_checked": 1785215622.2401614
+        "last_checked": 1785224914.5699005
       }
     },
     "flukeandbox.com": {
@@ -342,7 +342,7 @@
         "game": "pokemon",
         "first_seen": 1785195632.7768679,
         "available": true,
-        "last_checked": 1785215623.3364196
+        "last_checked": 1785224914.82015
       },
       "10431777112380": {
         "title": "Pokémon TCG: Mega Evolution Pitch Black Booster Box (36 Packs)",
@@ -350,7 +350,7 @@
         "game": "pokemon",
         "first_seen": 1785195632.7768679,
         "available": true,
-        "last_checked": 1785215623.3364196
+        "last_checked": 1785224914.82015
       },
       "10426677526844": {
         "title": "Pokémon TCG Mega Greninja ex Premium Collection",
@@ -358,7 +358,7 @@
         "game": "pokemon",
         "first_seen": 1785195632.7768679,
         "available": true,
-        "last_checked": 1785215623.3364196
+        "last_checked": 1785224914.82015
       },
       "10389282423100": {
         "title": "Pokemon Mega Zygarde ex Premium Collection",
@@ -366,7 +366,7 @@
         "game": "pokemon",
         "first_seen": 1785195632.7768679,
         "available": true,
-        "last_checked": 1785215623.3364196
+        "last_checked": 1785224914.82015
       }
     },
     "frenlybricks.store": {},
@@ -377,7 +377,7 @@
         "game": "pokemon",
         "first_seen": 1785203815.8723795,
         "available": true,
-        "last_checked": 1785215627.0231478
+        "last_checked": 1785224916.5637124
       }
     },
     "gamers-village.com.au": {},
@@ -388,7 +388,7 @@
         "game": "pokemon",
         "first_seen": 1785203808.6520438,
         "available": true,
-        "last_checked": 1785215616.5045109
+        "last_checked": 1785224909.6131225
       },
       "9554478235904": {
         "title": "Pokemon TCG: Mega Evolution - Pitch Black Elite Trainer Box - 1 PER PERSON LIMIT",
@@ -396,7 +396,7 @@
         "game": "pokemon",
         "first_seen": 1785215616.5045109,
         "available": true,
-        "last_checked": 1785215616.5045109
+        "last_checked": 1785224909.6131225
       }
     },
     "fromthedeepgames.com.au": {
@@ -424,7 +424,7 @@
         "game": "riftbound",
         "first_seen": 1785203817.0917475,
         "available": true,
-        "last_checked": 1785215630.0106041
+        "last_checked": 1785224917.2344015
       },
       "10524917825830": {
         "title": "Riftbound: League of Legends TCG – Booster Display – Unleashed",
@@ -432,7 +432,7 @@
         "game": "riftbound",
         "first_seen": 1785203817.0917475,
         "available": true,
-        "last_checked": 1785215630.0106041
+        "last_checked": 1785224917.2344015
       }
     },
     "inngames.com.au": {
@@ -442,7 +442,7 @@
         "game": "pokemon",
         "first_seen": 1785203818.1684773,
         "available": true,
-        "last_checked": 1785203818.1684773
+        "last_checked": 1785224917.168155
       }
     },
     "irresistibleforce.com.au": {
@@ -452,7 +452,7 @@
         "game": "riftbound",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785203818.1921334
+        "last_checked": 1785224918.5929117
       },
       "10488730714427": {
         "title": "LPG Essentials Acrylic Booster Box Protector - Pokemon Booster Box Size",
@@ -460,7 +460,7 @@
         "game": "pokemon",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785203818.1921334
+        "last_checked": 1785224918.5929117
       },
       "10488729862459": {
         "title": "LPG Acrylic Booster Box Protector - MTG Collector Box Size",
@@ -468,7 +468,7 @@
         "game": "mtg",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785203818.1921334
+        "last_checked": 1785224918.5929117
       },
       "10311882834235": {
         "title": "Pokémon TCG: Mega Evolution Chaos Rising Booster Box",
@@ -476,7 +476,7 @@
         "game": "pokemon",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785203818.1921334
+        "last_checked": 1785224918.5929117
       },
       "10383874949435": {
         "title": "POKÉMON TCG Scarlet & Violet 151 Booster Bundle Set (DISPLAY)",
@@ -484,7 +484,15 @@
         "game": "pokemon",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785203818.1921334
+        "last_checked": 1785224918.5929117
+      },
+      "10311882572091": {
+        "title": "Pokémon TCG Mega Zygarde ex Premium Collection",
+        "line": "premium collection",
+        "game": "pokemon",
+        "first_seen": 1785224918.5929117,
+        "available": true,
+        "last_checked": 1785224918.5929117
       }
     },
     "iconsofsport.com.au": {},
@@ -494,6 +502,42 @@
     "gamerscombined.com.au": {},
     "kidnplay.au": {},
     "kingscomics.com": {},
-    "kandkcreativetoys.com.au": {}
+    "kandkcreativetoys.com.au": {},
+    "kawaiicollector.com.au": {
+      "9242074808533": {
+        "title": "Blooming Waters Premium Collection Case (x6 collection boxes) - Scarlet & Violet 151 Pokemon TCG",
+        "line": "premium collection case",
+        "game": "pokemon",
+        "first_seen": 1785224918.6699145,
+        "available": true,
+        "last_checked": 1785224918.6699145
+      }
+    },
+    "justcardstuff.com.au": {
+      "8802150678681": {
+        "title": "Acrylic Case Box - Pokemon TCG - NEW Booster Bundle Box Collector Case",
+        "line": "booster bundle",
+        "game": "pokemon",
+        "first_seen": 1785224919.2594385,
+        "available": true,
+        "last_checked": 1785224919.2594385
+      },
+      "8733133766809": {
+        "title": "Riftbound: League of Legends TCG: Unleashed Booster Box",
+        "line": "booster box",
+        "game": "riftbound",
+        "first_seen": 1785224919.2594385,
+        "available": true,
+        "last_checked": 1785224919.2594385
+      },
+      "8401803477145": {
+        "title": "Acrylic Case Box - Pokemon TCG - Booster Bundle Box Collector Case",
+        "line": "booster bundle",
+        "game": "pokemon",
+        "first_seen": 1785224919.2594385,
+        "available": true,
+        "last_checked": 1785224919.2594385
+      }
+    }
   }
 }
