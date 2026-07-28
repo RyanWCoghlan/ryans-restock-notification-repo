@@ -332,7 +332,7 @@
         "game": "pokemon",
         "first_seen": 1785195632.3916209,
         "available": true,
-        "last_checked": 1785224914.5699005
+        "last_checked": 1785234540.72414
       }
     },
     "flukeandbox.com": {
@@ -342,7 +342,7 @@
         "game": "pokemon",
         "first_seen": 1785195632.7768679,
         "available": true,
-        "last_checked": 1785224914.82015
+        "last_checked": 1785234542.8956819
       },
       "10431777112380": {
         "title": "Pokémon TCG: Mega Evolution Pitch Black Booster Box (36 Packs)",
@@ -350,7 +350,7 @@
         "game": "pokemon",
         "first_seen": 1785195632.7768679,
         "available": true,
-        "last_checked": 1785224914.82015
+        "last_checked": 1785234542.8956819
       },
       "10426677526844": {
         "title": "Pokémon TCG Mega Greninja ex Premium Collection",
@@ -358,7 +358,7 @@
         "game": "pokemon",
         "first_seen": 1785195632.7768679,
         "available": true,
-        "last_checked": 1785224914.82015
+        "last_checked": 1785234542.8956819
       },
       "10389282423100": {
         "title": "Pokemon Mega Zygarde ex Premium Collection",
@@ -366,7 +366,7 @@
         "game": "pokemon",
         "first_seen": 1785195632.7768679,
         "available": true,
-        "last_checked": 1785224914.82015
+        "last_checked": 1785234542.8956819
       }
     },
     "frenlybricks.store": {},
@@ -377,7 +377,7 @@
         "game": "pokemon",
         "first_seen": 1785203815.8723795,
         "available": true,
-        "last_checked": 1785224916.5637124
+        "last_checked": 1785234543.5668175
       }
     },
     "gamers-village.com.au": {},
@@ -452,7 +452,7 @@
         "game": "riftbound",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785224918.5929117
+        "last_checked": 1785234546.8359544
       },
       "10488730714427": {
         "title": "LPG Essentials Acrylic Booster Box Protector - Pokemon Booster Box Size",
@@ -460,7 +460,7 @@
         "game": "pokemon",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785224918.5929117
+        "last_checked": 1785234546.8359544
       },
       "10488729862459": {
         "title": "LPG Acrylic Booster Box Protector - MTG Collector Box Size",
@@ -468,7 +468,7 @@
         "game": "mtg",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785224918.5929117
+        "last_checked": 1785234546.8359544
       },
       "10311882834235": {
         "title": "Pokémon TCG: Mega Evolution Chaos Rising Booster Box",
@@ -476,7 +476,7 @@
         "game": "pokemon",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785224918.5929117
+        "last_checked": 1785234546.8359544
       },
       "10383874949435": {
         "title": "POKÉMON TCG Scarlet & Violet 151 Booster Bundle Set (DISPLAY)",
@@ -484,7 +484,7 @@
         "game": "pokemon",
         "first_seen": 1785203818.1921334,
         "available": true,
-        "last_checked": 1785224918.5929117
+        "last_checked": 1785234546.8359544
       },
       "10311882572091": {
         "title": "Pokémon TCG Mega Zygarde ex Premium Collection",
@@ -492,7 +492,7 @@
         "game": "pokemon",
         "first_seen": 1785224918.5929117,
         "available": true,
-        "last_checked": 1785224918.5929117
+        "last_checked": 1785234546.8359544
       }
     },
     "iconsofsport.com.au": {},
@@ -501,7 +501,24 @@
     "countlesscards.com": {},
     "gamerscombined.com.au": {},
     "kidnplay.au": {},
-    "kingscomics.com": {},
+    "kingscomics.com": {
+      "8527218507955": {
+        "title": "POKEMON TCG: MEGA EVOLUTION 5 PITCH BLACK BOOSTER BOX",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785234547.4857035,
+        "available": true,
+        "last_checked": 1785234547.4857035
+      },
+      "8547331178675": {
+        "title": "RIFTBOUND LEAGUE OF LEGENDS TCG SET THREE UNLEASHED BOOSTER BOX",
+        "line": "booster box",
+        "game": "riftbound",
+        "first_seen": 1785234547.4857035,
+        "available": true,
+        "last_checked": 1785234547.4857035
+      }
+    },
     "kandkcreativetoys.com.au": {},
     "kawaiicollector.com.au": {
       "9242074808533": {
@@ -510,7 +527,7 @@
         "game": "pokemon",
         "first_seen": 1785224918.6699145,
         "available": true,
-        "last_checked": 1785224918.6699145
+        "last_checked": 1785234546.2097533
       }
     },
     "justcardstuff.com.au": {
@@ -537,6 +554,34 @@
         "first_seen": 1785224919.2594385,
         "available": true,
         "last_checked": 1785224919.2594385
+      }
+    },
+    "legendsandcollectables.com": {
+      "8496660480170": {
+        "title": "Riftbound Vendetta Booster Box",
+        "line": "booster box",
+        "game": "riftbound",
+        "first_seen": 1785234549.0668423,
+        "available": true,
+        "last_checked": 1785234549.0668423
+      }
+    },
+    "manamarket.com.au": {
+      "7717747097806": {
+        "title": "Pokemon TCG: Sun & Moon Cosmic Eclipse Booster Box",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785234549.2292614,
+        "available": true,
+        "last_checked": 1785234549.2292614
+      },
+      "7717746999502": {
+        "title": "Pokemon Cards - XY Primal Clash - Booster Box",
+        "line": "booster box",
+        "game": "pokemon",
+        "first_seen": 1785234549.2292614,
+        "available": true,
+        "last_checked": 1785234549.2292614
       }
     }
   }
